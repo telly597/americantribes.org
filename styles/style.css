@@ -1,5 +1,5 @@
 body {
-  font-family: serif;
+  font-family: Georgia, serif;
   background-color: #fefefe;
   margin: 0;
   padding: 0;
@@ -9,14 +9,20 @@ body {
 header {
   background-color: #001f3f;
   color: white;
-  padding: 20px;
+  padding: 30px 20px;
   text-align: center;
+  border-bottom: 3px solid #003366;
+}
+
+nav {
+  margin-top: 10px;
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  margin: 0 10px;
+  margin: 0 15px;
+  font-weight: bold;
 }
 
 nav a:hover {
@@ -24,7 +30,9 @@ nav a:hover {
 }
 
 main {
-  padding: 20px;
+  padding: 30px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 h1, h2 {
@@ -32,14 +40,26 @@ h1, h2 {
   padding: 10px 0;
 }
 
+h2 {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+
+img {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  height: auto;
+}
+
 .button {
   display: inline-block;
   margin: 5px;
-  padding: 10px 15px;
+  padding: 10px 20px;
   background-color: #001f3f;
   color: white;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 
 .button:hover {
@@ -50,6 +70,7 @@ footer {
   background-color: #001f3f;
   color: white;
   text-align: center;
-  padding: 10px;
-  margin-top: 20px;
+  padding: 15px;
+  margin-top: 40px;
+  font-size: 0.9em;
 }

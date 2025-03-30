@@ -1,88 +1,92 @@
 const popups = {
   newengland: `
-      <div class="popup-header">
-          <img src='assets/shields/new-england.png' class='popup-shield'>
-          <h3>The New England Tribe</h3>
-      </div>
-      <p>Rooted in the earliest Puritan settlements, the New England Tribe maintains traditions of maritime trade, education, and self-governance.</p>
-      <ul>
-          <li><strong>Territory:</strong> Maine, New Hampshire, Vermont, Massachusetts, Rhode Island, most of Upstate New York, parts of Connecticut</li>
-          <li><strong>Primary Ethnic Makeup:</strong> English, Irish, French, Italian</li>
-          <li><strong>White Population:</strong> 7.9 million</li>
-          <li><strong>Christian Denominations:</strong> 28% Catholic, 24% Mainline Protestant, 19% Evangelical</li>
-          <li><strong>Territory Area:</strong> ~7% (~115,000 sq mi)</li>
-          <li><strong>Cultural Traits:</strong> Maritime, Academic, Republican</li>
-          <li><strong>Historical Notes:</strong> Founding heartland of early American colonial identity.</li>
-      </ul>
-  `,
+    <div class="popup-header">
+        <img src='assets/shields/new-england.png' class='popup-shield'>
+        <h3>The New England Tribe</h3>
+    </div>
+    <p>Rooted in the earliest Puritan settlements, the New England Tribe maintains traditions of maritime trade, education, and local self-governance.</p>
+    <ul>
+        <li><strong>Territory:</strong> Maine, New Hampshire, Vermont, Massachusetts, Rhode Island, Eastern Connecticut, Upstate New York</li>
+        <li><strong>Primary Ethnic Makeup:</strong> English, Irish, French, Italian, German</li>
+        <li><strong>White Population:</strong> ~11.5 million</li>
+        <li><strong>Christian Denominations:</strong> 27% Catholic, 23% Mainline Protestant, 18% Evangelical</li>
+        <li><strong>Territory Area:</strong> ~115,000 sq mi (~6% of U.S. land area)</li>
+        <li><strong>Cultural Traits:</strong> Maritime, Academic, Town-Meeting Tradition, Independent</li>
+        <li><strong>Historical Notes:</strong> Founding heartland of early American colonial identity and the American Revolution. Expanded inland through migration and trade into Upstate New York.</li>
+    </ul>
+`,
 
-  newyork: `
-      <div class="popup-header">
-          <img src='assets/shields/new-york.png' class='popup-shield'>
-          <h3>The Greater New York Tribe</h3>
-      </div>
-      <p>The merchant tribe of the Confederacy, centered on the great harbors and rivers of the Northeast.</p>
-      <ul>
-          <li><strong>Territory:</strong> New York City metro, Long Island, New Jersey, Delaware, Maryland, Philadelphia, parts of Connecticut</li>
-          <li><strong>Primary Ethnic Makeup:</strong> Italian, Irish, German, English</li>
-          <li><strong>White Population:</strong> 7.1 million</li>
-          <li><strong>Christian Denominations:</strong> 39% Catholic, 25% Mainline Protestant, 20% Evangelical</li>
-          <li><strong>Territory Area:</strong> ~6% (~100,000 sq mi)</li>
-          <li><strong>Cultural Traits:</strong> Commercial, Cosmopolitan, Industrial</li>
-          <li><strong>Historical Notes:</strong> Major center of trade and immigration since the 19th century.</li>
-      </ul>
-  `,
 
-  greatlakes: `
-      <div class="popup-header">
-          <img src='assets/shields/great-lakes.png' class='popup-shield'>
-          <h3>The Great Lakes Tribe</h3>
-      </div>
-      <p>Centered on the inland seas of North America, the Great Lakes Tribe built its strength on trade, agriculture, and industry along the mighty waterways.</p>
-      <ul>
-          <li><strong>Territory:</strong> Most of Pennsylvania, Ohio, Indiana, Illinois, Michigan, Wisconsin, Minnesota, Northern Missouri, Iowa</li>
-          <li><strong>Primary Ethnic Makeup:</strong> German, Polish, Irish, English, Scandinavian</li>
-          <li><strong>White Population:</strong> 18.2 million</li>
-          <li><strong>Christian Denominations:</strong> 34% Catholic, 30% Evangelical, 16% Mainline Protestant</li>
-          <li><strong>Territory Area:</strong> ~14% (~230,000 sq mi)</li>
-          <li><strong>Cultural Traits:</strong> Industrial, Maritime, Working-Class</li>
-          <li><strong>Historical Notes:</strong> Shaped by Central European immigration during the 19th century.</li>
-      </ul>
-  `,
 
-  dixieland: `
-      <div class="popup-header">
-          <img src='assets/shields/dixieland.png' class='popup-shield'>
-          <h3>The Dixieland Tribe</h3>
-      </div>
-      <p>Dixieland preserves the culture of the old South, marked by aristocratic traditions, agriculture, and the memory of Cavalier forebears.</p>
-      <ul>
-          <li><strong>Territory:</strong> Virginia, West Virginia, North Carolina, South Carolina, Georgia, Alabama, Mississippi, Louisiana, Arkansas, Tennessee, Kentucky, Southern Missouri (including St. Louis and Kansas City), Northern Florida</li>
-          <li><strong>Primary Ethnic Makeup:</strong> English, Scotch-Irish, Irish, French</li>
-          <li><strong>White Population:</strong> 20.5 million</li>
-          <li><strong>Christian Denominations:</strong> 49% Evangelical, 18% Baptist, 17% Mainline Protestant</li>
-          <li><strong>Territory Area:</strong> ~22% (~355,000 sq mi)</li>
-          <li><strong>Cultural Traits:</strong> Agrarian, Cavalier, Traditional</li>
-          <li><strong>Historical Notes:</strong> Home to the Confederate legacy and Cavalier aristocracy.</li>
-      </ul>
-  `,
+newyork: `
+    <div class="popup-header">
+        <img src='assets/shields/new-york.png' class='popup-shield'>
+        <h3>The Greater New York Tribe</h3>
+    </div>
+    <p>A Megalopolis centered on the great harbors and rivers of the Northeast.</p>
+    <ul>
+        <li><strong>Territory:</strong> New York City metro, Long Island, New Jersey, Delaware, Maryland, Eastern Pennsylvania, parts of Connecticut</li>
+        <li><strong>Primary Ethnic Makeup:</strong> Italian, Irish, German, English</li>
+        <li><strong>White Population:</strong> ~12 million</li>
+        <li><strong>Christian Denominations:</strong> Predominantly Catholic and Mainline Protestant</li>
+        <li><strong>Territory Area:</strong> ~90,000 sq mi (~5% of U.S. land area)</li>
+        <li><strong>Cultural Traits:</strong> Commercial, Cosmopolitan, Industrial</li>
+        <li><strong>Historical Notes:</strong> Major center of trade and immigration since the 19th century.</li>
+    </ul>
+`,
 
-  florida: `
-      <div class="popup-header">
-          <img src='assets/shields/florida.png' class='popup-shield'>
-          <h3>The Florida Tribe</h3>
-      </div>
-      <p>Florida, the subtropical edge of the Confederacy, is a land of marshes, citrus groves, and coastal towns.</p>
-      <ul>
-          <li><strong>Territory:</strong> Central and South Florida</li>
-          <li><strong>Primary Ethnic Makeup:</strong> English, Irish, German, Scottish</li>
-          <li><strong>White Population:</strong> 10.2 million</li>
-          <li><strong>Christian Denominations:</strong> 41% Evangelical, 27% Catholic, 15% Mainline Protestant</li>
-          <li><strong>Territory Area:</strong> ~6% (~95,000 sq mi)</li>
-          <li><strong>Cultural Traits:</strong> Coastal, Frontier, Cavalier Legacy</li>
-          <li><strong>Historical Notes:</strong> Early settlement influenced by the Spanish and later the English plantations.</li>
-      </ul>
-  `,
+greatlakes: `
+    <div class="popup-header">
+        <img src='assets/shields/great-lakes.png' class='popup-shield'>
+        <h3>The Great Lakes Tribe</h3>
+    </div>
+    <p>Centered on the inland seas of North America, the Great Lakes Tribe built its strength on trade, agriculture, and industry along the mighty waterways.</p>
+    <ul>
+        <li><strong>Territory:</strong> Western Pennsylvania, Ohio, Indiana, Illinois, Michigan, Wisconsin, Minnesota, Northern Missouri, Iowa</li>
+        <li><strong>Primary Ethnic Makeup:</strong> German, Irish, Polish, English, Scandinavian</li>
+        <li><strong>White Population:</strong> ~46 million</li>
+        <li><strong>Christian Denominations:</strong> 33% Catholic, 31% Evangelical Protestant, 18% Mainline Protestant</li>
+        <li><strong>Territory Area:</strong> ~500,000 sq mi (~14% of U.S. land area)</li>
+        <li><strong>Cultural Traits:</strong> Industrial, Agricultural, Working-Class</li>
+        <li><strong>Historical Notes:</strong> Shaped by waves of European immigration during the 19th and early 20th centuries.</li>
+    </ul>
+`,
+
+
+dixieland: `
+    <div class="popup-header">
+        <img src='assets/shields/dixieland.png' class='popup-shield'>
+        <h3>The Dixieland Tribe</h3>
+    </div>
+    <p>Dixieland preserves the culture of the old South, marked by aristocratic traditions, agriculture, and the memory of Cavalier forebears.</p>
+    <ul>
+        <li><strong>Territory:</strong> Virginia, West Virginia, North Carolina, South Carolina, Georgia, Alabama, Mississippi, Louisiana, Arkansas, Tennessee, Kentucky, Southern Missouri (including St. Louis and Kansas City), Northern Florida</li>
+        <li><strong>Primary Ethnic Makeup:</strong> English, Scotch-Irish, Irish, French</li>
+        <li><strong>White Population:</strong> ~39 million</li>
+        <li><strong>Christian Denominations:</strong> 49% Evangelical, 18% Baptist (subset of Evangelical), 17% Mainline Protestant</li>
+        <li><strong>Territory Area:</strong> ~540,000 sq mi (~22% of U.S. land area)</li>
+        <li><strong>Cultural Traits:</strong> Agrarian, Cavalier, Traditional</li>
+        <li><strong>Historical Notes:</strong> Shaped by English and Scotch-Irish settlement, and later known for the Confederate legacy and Cavalier aristocracy.</li>
+    </ul>
+`,
+
+florida: `
+<div class="popup-header">
+    <img src='assets/shields/florida.png' class='popup-shield'>
+    <h3>The Florida Tribe</h3>
+</div>
+<p>Florida, the subtropical edge of the Confederacy, is a land of marshes, citrus groves, and coastal towns.</p>
+<ul>
+    <li><strong>Territory:</strong> Central and South Florida</li>
+    <li><strong>Primary Ethnic Makeup:</strong> English, Irish, German, Scottish</li>
+    <li><strong>White Population:</strong> ~6.5 million</li>
+    <li><strong>Christian Denominations:</strong> 27% Catholic, 22% Evangelical, 9% Mainline Protestant</li>
+    <li><strong>Territory Area:</strong> ~5% (~95,000 sq mi)</li>
+    <li><strong>Cultural Traits:</strong> Coastal, Subtropical, Independent</li>
+    <li><strong>Historical Notes:</strong> Early settlement influenced by Spanish colonization and later English plantations.</li>
+</ul>
+`,
+
 
   texas: `
       <div class="popup-header">
@@ -110,7 +114,7 @@ const popups = {
       <ul>
           <li><strong>Territory:</strong> Nebraska, Kansas, North Dakota, South Dakota, Wyoming, Colorado, parts of Montana</li>
           <li><strong>Primary Ethnic Makeup:</strong> German, Scandinavian, Irish, English</li>
-          <li><strong>White Population:</strong> 8.5 million</li>
+          <li><strong>White Population:</strong> 10.9 million</li>
           <li><strong>Christian Denominations:</strong> 42% Evangelical, 28% Mainline Protestant, 15% Catholic</li>
           <li><strong>Territory Area:</strong> ~16% (~260,000 sq mi)</li>
           <li><strong>Cultural Traits:</strong> Agrarian, Frontier, Stoic</li>
@@ -127,7 +131,7 @@ const popups = {
       <ul>
           <li><strong>Territory:</strong> Utah, Nevada, Arizona, parts of New Mexico, Eastern California (desert regions)</li>
           <li><strong>Primary Ethnic Makeup:</strong> English, Scandinavian, German, Scottish</li>
-          <li><strong>White Population:</strong> 4.5 million</li>
+          <li><strong>White Population:</strong> 8.5 million</li>
           <li><strong>Christian Denominations:</strong> 53% Latter-Day Saints, 19% Evangelical, 15% Catholic</li>
           <li><strong>Territory Area:</strong> ~17% (~275,000 sq mi)</li>
           <li><strong>Cultural Traits:</strong> Religious, Isolated, Pioneer</li>
@@ -144,7 +148,7 @@ const popups = {
       <ul>
           <li><strong>Territory:</strong> Coastal and Central California (Bay Area, Sacramento Valley, Central Valley, Los Angeles Basin), Hawaii</li>
           <li><strong>Primary Ethnic Makeup:</strong> English, German, Irish, Italian</li>
-          <li><strong>White Population:</strong> 8.1 million</li>
+          <li><strong>White Population:</strong> 13.5 million</li>
           <li><strong>Christian Denominations:</strong> 31% Catholic, 29% Evangelical, 18% Mainline Protestant</li>
           <li><strong>Territory Area:</strong> ~9% (~145,000 sq mi)</li>
           <li><strong>Cultural Traits:</strong> Pioneer, Coastal, Mercantile</li>
@@ -161,7 +165,7 @@ const popups = {
       <ul>
           <li><strong>Territory:</strong> Oregon, Washington, Northern California, Idaho, parts of Montana</li>
           <li><strong>Primary Ethnic Makeup:</strong> German, English, Scandinavian, Irish</li>
-          <li><strong>White Population:</strong> 6.5 million</li>
+          <li><strong>White Population:</strong> 14 million</li>
           <li><strong>Christian Denominations:</strong> 32% Evangelical, 21% Catholic, 18% Mainline Protestant</li>
           <li><strong>Territory Area:</strong> ~11% (~180,000 sq mi)</li>
           <li><strong>Cultural Traits:</strong> Maritime, Independent, Frontier</li>
@@ -178,7 +182,7 @@ const popups = {
       <ul>
           <li><strong>Territory:</strong> Alaska</li>
           <li><strong>Primary Ethnic Makeup:</strong> German, Irish, English, Scandinavian</li>
-          <li><strong>White Population:</strong> 0.5 million</li>
+          <li><strong>White Population:</strong> 0.4 million</li>
           <li><strong>Christian Denominations:</strong> 37% Evangelical, 22% Catholic, 20% Mainline Protestant</li>
           <li><strong>Territory Area:</strong> ~7% (~120,000 sq mi)</li>
           <li><strong>Cultural Traits:</strong> Frontier, Rugged, Isolated</li>

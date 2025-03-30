@@ -174,10 +174,10 @@ footer {
 /* Popup Header */
 .popup-header {
   position: relative;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
+  padding-left: 80px; /* this creates space so text doesn't overlap with the shield */
   text-align: center;
 }
-
 
 /* Shield */
 .popup-shield {
@@ -187,7 +187,6 @@ footer {
   width: 70px;
   height: auto;
 }
-
 /* Tribe Name */
 
 .popup-header h3 {

@@ -173,24 +173,24 @@ footer {
 
 /* Popup Header */
 .popup-header {
-  display: grid;
-  grid-template-columns: 70px 1fr;
-  align-items: center;
+  position: relative;
   margin-bottom: 25px;
+  text-align: center;
 }
 
 
 /* Shield */
 .popup-shield {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 70px;
-  flex-shrink: 0;
-  margin-top: -5px;
+  height: auto;
 }
 
 /* Tribe Name */
+
 .popup-header h3 {
-  flex: 1;
-  text-align: center;
   margin: 0;
   padding: 0;
 }

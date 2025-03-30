@@ -10,8 +10,8 @@
 
 <body>
     <header>
-      <img src="assets/images/tribes_logo_v2.png" alt="Tribal Confederacy Logo" style="height:80px; margin-bottom:10px;">
-      <p>A New Vision for America</p>
+        <img src="assets/images/tribes_logo_v2.png" alt="Tribal Confederacy Logo" style="height:80px; margin-bottom:10px;">
+        <p>A New Vision for America</p>
         <nav>
             <a href="index.html">Home</a>
             <a href="manifesto.html">Manifesto</a>
@@ -22,21 +22,21 @@
     <main>
         <section class="map-section">
             <div class="tribal-map-container">
-                <img src="assets/images/tribal-map.png" alt="Tribal Map" class="tribal-map">
+                <img src="assets/images/blank-map.png" alt="Tribal Map" class="tribal-map">
 
-                <!-- Interactive Hotspots (now buttons, not links) -->
-                <div class="map-shield" style="top:32%; left:60%;" data-tribe="greatlakes"></div>
-                <div class="map-shield" style="top:23%; left:90%;" data-tribe="newengland"></div>
-                <div class="map-shield" style="top:21%; left:43%;" data-tribe="greatplains"></div>
-                <div class="map-shield" style="top:39%; left:89%;" data-tribe="newyork"></div>
-                <div class="map-shield" style="top:40%; left:27%;" data-tribe="deseret"></div>
-                <div class="map-shield" style="top:14%; left:14%;" data-tribe="northwest"></div>
-                <div class="map-shield" style="top:83%; left:76%;" data-tribe="florida"></div>
-                <div class="map-shield" style="top:84%; left:62%;" data-tribe="twelfth"></div>
-                <div class="map-shield" style="top:59%; left:47%;" data-tribe="texas"></div>
-                <div class="map-shield" style="top:50%; left:13%;" data-tribe="california"></div>
-                <div class="map-shield" style="top:55%; left:72%;" data-tribe="dixieland"></div>
-                <div class="map-shield" style="top:77%; left:8%;" data-tribe="alaska"></div>
+                <!-- Shield Assets -->
+                <img src="assets/shields/great-lakes.png" class="shield" style="top:32%; left:60%;" data-tribe="greatlakes">
+                <img src="assets/shields/new-england.png" class="shield" style="top:23%; left:90%;" data-tribe="newengland">
+                <img src="assets/shields/great-plains.png" class="shield" style="top:21%; left:43%;" data-tribe="greatplains">
+                <img src="assets/shields/new-york.png" class="shield" style="top:39%; left:89%;" data-tribe="newyork">
+                <img src="assets/shields/deseret.png" class="shield" style="top:40%; left:27%;" data-tribe="deseret">
+                <img src="assets/shields/northwest.png" class="shield" style="top:14%; left:14%;" data-tribe="northwest">
+                <img src="assets/shields/florida.png" class="shield" style="top:83%; left:76%;" data-tribe="florida">
+                <img src="assets/shields/twelfth.png" class="shield" style="top:84%; left:62%;" data-tribe="twelfth">
+                <img src="assets/shields/texas.png" class="shield" style="top:59%; left:47%;" data-tribe="texas">
+                <img src="assets/shields/california.png" class="shield" style="top:50%; left:13%;" data-tribe="california">
+                <img src="assets/shields/dixieland.png" class="shield" style="top:55%; left:72%;" data-tribe="dixieland">
+                <img src="assets/shields/alaska.png" class="shield" style="top:77%; left:8%;" data-tribe="alaska">
 
             </div>
             <p style="text-align:center; margin-top:10px;">Click on any shield to learn about the tribe.</p>
@@ -57,7 +57,6 @@
     </div>
 
     <script>
-    // Example info — you will expand this!
     const popups = {
         greatlakes: "The Great Lakes Tribe is centered on the inland seas of North America.",
         newengland: "The New England Tribe preserves the old Puritan settlements.",
@@ -73,7 +72,7 @@
         alaska: "Alaska is the tribe of the northern frontier."
     };
 
-    document.querySelectorAll('.map-shield').forEach(el => {
+    document.querySelectorAll('.shield').forEach(el => {
         el.addEventListener('click', () => {
             const tribe = el.dataset.tribe;
             document.getElementById('popup-text').innerText = popups[tribe] || "Unknown Tribe";
@@ -83,6 +82,12 @@
 
     document.querySelector('.popup-close').addEventListener('click', () => {
         document.getElementById('tribe-popup').classList.add('hidden');
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === "Escape") {
+            document.getElementById('tribe-popup').classList.add('hidden');
+        }
     });
     </script>
 

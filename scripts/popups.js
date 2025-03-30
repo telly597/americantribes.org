@@ -6,7 +6,7 @@ const popups = {
       </div>
       <p>Rooted in the earliest Puritan settlements, the New England Tribe maintains traditions of maritime trade, education, and self-governance.</p>
       <ul>
-          <li><strong>Territory:</strong> Maine, New Hampshire, Vermont, Massachusetts, Rhode Island, parts of Connecticut</li>
+          <li><strong>Territory:</strong> Maine, New Hampshire, Vermont, Massachusetts, Rhode Island, most of Upstate New York, parts of Connecticut</li>
           <li><strong>Primary Ethnic Makeup:</strong> English, Irish, French, Italian</li>
           <li><strong>White Population:</strong> 7.9 million</li>
           <li><strong>Christian Denominations:</strong> 28% Catholic, 24% Mainline Protestant, 19% Evangelical</li>
@@ -40,7 +40,7 @@ const popups = {
       </div>
       <p>Centered on the inland seas of North America, the Great Lakes Tribe built its strength on trade, agriculture, and industry along the mighty waterways.</p>
       <ul>
-          <li><strong>Territory:</strong> Parts of Upstate New York, Western Pennsylvania, Ohio, Indiana, Illinois, Michigan, Wisconsin, Minnesota, Northern Missouri, Iowa</li>
+          <li><strong>Territory:</strong> Most of Pennsylvania, Ohio, Indiana, Illinois, Michigan, Wisconsin, Minnesota, Northern Missouri, Iowa</li>
           <li><strong>Primary Ethnic Makeup:</strong> German, Polish, Irish, English, Scandinavian</li>
           <li><strong>White Population:</strong> 18.2 million</li>
           <li><strong>Christian Denominations:</strong> 34% Catholic, 30% Evangelical, 16% Mainline Protestant</li>

@@ -144,13 +144,13 @@ footer {
 .popup-content {
   background: #fdf6e3 url("../images/parchment-texture.png");
   background-size: cover;
-  padding: 40px 35px;
+  padding: 35px 35px 35px 35px;
   border-radius: 12px;
   border: 3px solid #bfa76f;
   max-width: 650px;
   max-height: 80vh;
   overflow-y: auto;
-  text-align: center;
+  text-align: left;
   position: relative;
   font-family: 'IM Fell English', Georgia, serif;
   font-size: 1.05em;
@@ -163,34 +163,32 @@ footer {
   text-shadow: 0.3px 0.3px 0 rgba(0,0,0,0.05);
 }
 
-/* Activate Popup */
-.popup.active .popup-content {
-  transform: scale(1);
-  opacity: 1;
+/* Centered Tribe Name */
+.popup-content h3 {
+  text-align: center;
+  margin-bottom: 10px;
 }
 
-/* Inner parchment shadow */
-.popup-content::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 12px;
-  box-shadow: inset 0 0 15px rgba(0,0,0,0.15);
-  pointer-events: none;
-}
-
-/* Popup Shield */
+/* Shield on top left */
 .popup-shield {
-  width: 120px;
-  display: block;
-  margin: 0 auto 20px auto;
+  width: 80px;
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 10px;
 }
 
-/* Wax Seal Close Button */
+/* Text inside popup left-aligned */
+.popup-content p,
+.popup-content ul,
+.popup-content li {
+  text-align: left;
+}
+
+/* Fix close button */
 .popup-close {
   position: absolute;
-  top: -15px;
-  right: -15px;
+  top: -12px;
+  right: -12px;
   width: 35px;
   height: 35px;
   background: radial-gradient(circle at 30% 30%, #a52a2a, #7b1e1e);

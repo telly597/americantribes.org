@@ -73,3 +73,48 @@ footer {
   font-size: 0.9em;
   border-top: 2px solid #444;
 }
+
+
+.tribal-map-container {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.tribal-map {
+  width: 100%;
+  display: block;
+  border: 1px solid #ccc;
+}
+
+/* The interactive link */
+.map-link {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  padding: 6px 10px;
+  background: rgba(10, 10, 10, 0.85);
+  color: #FFD700;
+  text-decoration: none;
+  font-family: "Georgia", serif;
+  font-size: 0.85em;
+  border: 1px solid #FFD700;
+  border-radius: 3px;
+  box-shadow: 0 0 0 transparent;
+  opacity: 0;
+  transition: all 0.3s;
+  pointer-events: auto;
+  white-space: nowrap;
+}
+
+/* Hover = Glow */
+.map-link:hover {
+  opacity: 1;
+  box-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700;
+  background: rgba(0, 0, 0, 0.9);
+  color: #fff;
+}
+
+/* Optional: smoother font for labels */
+.map-link {
+  text-shadow: 1px 1px 1px #000;
+}

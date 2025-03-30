@@ -83,7 +83,6 @@ footer {
 .tribal-map {
   width: 100%;
   display: block;
-  border: 1px solid #ccc;
 }
 
 /* Clickable invisible shield hotspots */
@@ -92,13 +91,18 @@ footer {
   transform: translate(-50%, -50%);
   width: 6%;
   height: 12%;
-  background: rgba(255, 255, 255, 0); /* transparent but clickable */
+  background: rgba(255, 255, 255, 0); /* fully transparent */
   cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  border-radius: 5%;
 }
 
 .map-shield:hover {
-  background: rgba(255, 215, 0, 0.15); /* subtle glow when hovering */
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.6); /* subtle golden glow */
+  background: rgba(255, 255, 255, 0); /* stays invisible */
 }
+
+
 
 /* Popup Modal */
 .popup {

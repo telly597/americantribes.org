@@ -73,22 +73,23 @@
     };
 
     document.querySelectorAll('.shield').forEach(el => {
-        el.addEventListener('click', () => {
-            const tribe = el.dataset.tribe;
-            document.getElementById('popup-text').innerText = popups[tribe] || "Unknown Tribe";
-            document.getElementById('tribe-popup').classList.remove('hidden');
-        });
+    el.addEventListener('click', () => {
+        const tribe = el.dataset.tribe;
+        document.getElementById('popup-text').innerText = popups[tribe] || "Unknown Tribe";
+        document.getElementById('tribe-popup').classList.add('active');
     });
+});
 
-    document.querySelector('.popup-close').addEventListener('click', () => {
-        document.getElementById('tribe-popup').classList.add('hidden');
-    });
+document.querySelector('.popup-close').addEventListener('click', () => {
+    document.getElementById('tribe-popup').classList.remove('active');
+});
 
-    document.addEventListener('keydown', (e) => {
-        if (e.key === "Escape") {
-            document.getElementById('tribe-popup').classList.add('hidden');
-        }
-    });
+document.addEventListener('keydown', (e) => {
+    if (e.key === "Escape") {
+        document.getElementById('tribe-popup').classList.remove('active');
+    }
+});
+
     </script>
 
 </body>

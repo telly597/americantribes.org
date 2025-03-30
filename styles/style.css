@@ -116,26 +116,27 @@ footer {
   transform: translate(-50%, -60%) scale(1.08);
   filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.85));
 }
-
 /* Popup */
 .popup {
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 1000;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.4s ease;
+  transition: opacity 0.5s ease;
 }
 
-.popup:not(.hidden) {
+/* Active state */
+.popup.active {
   opacity: 1;
   pointer-events: all;
 }
 
+/* Popup Content Animation */
 .popup-content {
   background: #fff;
   padding: 30px 25px;
@@ -146,13 +147,23 @@ footer {
   font-family: Georgia, serif;
   box-shadow: 0 0 25px rgba(0,0,0,0.4);
   transform: scale(0.9);
-  transition: transform 0.3s ease;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  opacity: 0;
 }
 
-.popup:not(.hidden) .popup-content {
+/* Animate in */
+.popup.active .popup-content {
   transform: scale(1);
+  opacity: 1;
 }
 
+/* Animate out */
+.popup:not(.active) .popup-content {
+  transform: scale(0.9);
+  opacity: 0;
+}
+
+/* Close Button */
 .popup-close {
   position: absolute;
   top: 10px;
@@ -167,8 +178,4 @@ footer {
 
 .popup-close:hover {
   color: #000;
-}
-
-.hidden {
-  display: none;
 }

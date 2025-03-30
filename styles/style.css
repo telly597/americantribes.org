@@ -120,7 +120,9 @@ footer {
 .popup {
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px); /* for Safari */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -129,6 +131,7 @@ footer {
   pointer-events: none;
   transition: opacity 0.5s ease;
 }
+
 
 /* Active state */
 .popup.active {

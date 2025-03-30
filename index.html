@@ -24,20 +24,19 @@
             <div class="tribal-map-container">
                 <img src="assets/images/tribal-map.png" alt="Tribal Map" class="tribal-map">
 
-                <!-- Example Hotspots -->
-                <a href="greatlakes.html" class="map-link" style="top: 32%; left: 62%;">Great Lakes</a>
-                <a href="newengland.html" class="map-link" style="top: 22%; left: 90%;">New England</a>
-                <a href="greatplains.html" class="map-link" style="top: 21%; left: 43%;">Great Plains</a>
-                <a href="newyork.html" class="map-link" style="top: 39%; left: 89%;">New York</a>
-                <a href="deseret.html" class="map-link" style="top: 40%; left: 27%;">Deseret</a>
-                <a href="northwest.html" class="map-link" style="top: 14%; left: 16%;">Northwest</a>
-                <a href="florida.html" class="map-link" style="top: 83%; left: 76%;">Florida</a>
-                <a href="twelfth.html" class="map-link" style="top: 84%; left: 63%;">12th Tribe</a>
-                <a href="texas.html" class="map-link" style="top: 59%; left: 47%;">Greater Texas</a>
-                <a href="california.html" class="map-link" style="top: 50%; left: 13%;">California</a>
-                <a href="dixieland.html" class="map-link" style="top: 55%; left: 72%;">Dixieland</a>
-                <a href="alaska.html" class="map-link" style="top: 77%; left: 8%;">Alaska</a>
-                <!-- Add more links for each tribe -->
+                <!-- Interactive Hotspots (now buttons, not links) -->
+                <div class="map-shield" style="top:32%; left:62%;" data-tribe="greatlakes"></div>
+                <div class="map-shield" style="top:22%; left:90%;" data-tribe="newengland"></div>
+                <div class="map-shield" style="top:21%; left:43%;" data-tribe="greatplains"></div>
+                <div class="map-shield" style="top:39%; left:89%;" data-tribe="newyork"></div>
+                <div class="map-shield" style="top:40%; left:27%;" data-tribe="deseret"></div>
+                <div class="map-shield" style="top:14%; left:16%;" data-tribe="northwest"></div>
+                <div class="map-shield" style="top:83%; left:76%;" data-tribe="florida"></div>
+                <div class="map-shield" style="top:84%; left:63%;" data-tribe="twelfth"></div>
+                <div class="map-shield" style="top:59%; left:47%;" data-tribe="texas"></div>
+                <div class="map-shield" style="top:50%; left:13%;" data-tribe="california"></div>
+                <div class="map-shield" style="top:55%; left:72%;" data-tribe="dixieland"></div>
+                <div class="map-shield" style="top:77%; left:8%;" data-tribe="alaska"></div>
 
             </div>
             <p style="text-align:center; margin-top:10px;">Click on any shield to learn about the tribe.</p>
@@ -48,6 +47,44 @@
             <p>We are a religio-political organization that seeks to reconstitute America as a confederation of Twelve sovereign nations, bound by the Christian faith and kinship.</p>
         </section>
     </main>
+
+    <!-- Modal -->
+    <div id="tribe-popup" class="popup hidden">
+        <div class="popup-content">
+            <span class="popup-close">&times;</span>
+            <div id="popup-text"></div>
+        </div>
+    </div>
+
+    <script>
+    // Example info — you will expand this!
+    const popups = {
+        greatlakes: "The Great Lakes Tribe is centered on the inland seas of North America.",
+        newengland: "The New England Tribe preserves the old Puritan settlements.",
+        greatplains: "The Great Plains Tribe stretches across the heartland.",
+        newyork: "The New York Tribe is the merchant and trade tribe of the Confederacy.",
+        deseret: "Deseret, the desert kingdom, draws upon frontier and pioneer traditions.",
+        northwest: "The Northwest Tribe oversees the rugged Pacific coast.",
+        florida: "Florida represents the subtropical coastal frontier.",
+        twelfth: "The Twelfth Tribe is the Confederacy's sacred and federal order.",
+        texas: "Greater Texas unites cattlemen, oilmen, and settlers of the plains.",
+        california: "The California Tribe represents the westernmost settlement.",
+        dixieland: "Dixieland holds the old South and the memory of its Cavaliers.",
+        alaska: "Alaska is the tribe of the northern frontier."
+    };
+
+    document.querySelectorAll('.map-shield').forEach(el => {
+        el.addEventListener('click', () => {
+            const tribe = el.dataset.tribe;
+            document.getElementById('popup-text').innerText = popups[tribe] || "Unknown Tribe";
+            document.getElementById('tribe-popup').classList.remove('hidden');
+        });
+    });
+
+    document.querySelector('.popup-close').addEventListener('click', () => {
+        document.getElementById('tribe-popup').classList.add('hidden');
+    });
+    </script>
 
 </body>
 

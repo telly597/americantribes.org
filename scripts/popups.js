@@ -191,15 +191,8 @@ const popups = {
           <img src='assets/shields/twelfth.png' class='popup-shield'>
           <h3>The Twelfth Tribe</h3>
       </div>
-      <p>The Twelfth Tribe serves as the sacred and federal order binding the Confederacy together, rooted in tradition and faith.</p>
-      <ul>
-          <li><strong>Primary Ethnic Makeup:</strong> Mixed from all tribes</li>
-          <li><strong>White Population:</strong> --</li>
-          <li><strong>Christian Denominations:</strong> 100% Christian (official)</li>
-          <li><strong>Territory Area:</strong> ~1% (~15,000 sq mi)</li>
-          <li><strong>Cultural Traits:</strong> Sacred, Diplomatic, Ecclesial</li>
-          <li><strong>Historical Notes:</strong> Home to the confederal council and religious institutions.</li>
-      </ul>
+      <p>The Twelfth Tribe serves as an elite supra-tribal order.</p>
+
   `
 };
 

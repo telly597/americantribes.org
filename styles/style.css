@@ -101,7 +101,6 @@ footer {
   animation: shieldEnter 1s ease forwards;
 }
 
-/* Entrance Animation */
 @keyframes shieldEnter {
   from {
     opacity: 0;
@@ -113,7 +112,6 @@ footer {
   }
 }
 
-/* Hover Pulse */
 .shield:hover {
   transform: translate(-50%, -60%) scale(1.08);
   filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.85));
@@ -166,24 +164,27 @@ footer {
   overflow-x: hidden;
 }
 
-.popup.active .popup-content {
-  transform: scale(1);
-  opacity: 1;
-}
-
-/* Centered Tribe Name */
-.popup-content h3 {
-  text-align: center;
+/* Popup Header */
+.popup-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
   margin-bottom: 15px;
 }
 
-/* Shield on top left */
+/* Tribe Name */
+.popup-header h3 {
+  flex: 1;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Shield */
 .popup-shield {
   width: 70px;
-  float: left;
-  margin: 0 15px 0 0;
-  position: relative;
-  top: -5px;
+  height: auto;
+  margin-right: 15px;
 }
 
 /* Popup Text */
@@ -203,11 +204,11 @@ footer {
   pointer-events: none;
 }
 
-/* Wax Seal Close Button */
+/* Close Button */
 .popup-close {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 12px;
+  right: 12px;
   width: 35px;
   height: 35px;
   background: radial-gradient(circle at 30% 30%, #a52a2a, #7b1e1e);

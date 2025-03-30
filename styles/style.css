@@ -174,10 +174,14 @@ footer {
 
 /* Smooth Entrance Animation */
 .shield {
-  opacity: 0;
-  transform: translate(-50%, -50%) scale(0.9);
-  animation: shieldEnter 1s ease forwards;
+  position: absolute;
+  transform: translate(-50%, -60%);  /* fixes vertical shift */
+  cursor: pointer;
+  width: 6vw;
+  max-width: 50px;
+  transition: box-shadow 0.4s ease;
 }
+
 
 /* Slight stagger effect for variety */
 .shield:nth-child(1) { animation-delay: 0.2s; }

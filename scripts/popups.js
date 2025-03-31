@@ -200,6 +200,22 @@ florida: `
   `
 };
 
+// Add hover glow
+document.querySelectorAll('.shield').forEach(el => {
+  el.addEventListener('mouseenter', () => {
+      const tribe = el.dataset.tribe;
+      const border = document.getElementById(`${tribe}-border`);
+      if (border) border.classList.add('pulse');
+  });
+
+  el.addEventListener('mouseleave', () => {
+      const tribe = el.dataset.tribe;
+      const border = document.getElementById(`${tribe}-border`);
+      if (border) border.classList.remove('pulse');
+  });
+});
+
+
 // ----------------------------------
 // Improved Popup + Border Glow Logic
 // ----------------------------------

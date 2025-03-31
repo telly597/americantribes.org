@@ -57,7 +57,10 @@ dixieland: `
     <div class="popup-header">
         <img src='assets/shields/dixieland.png' class='popup-shield'>
         <h3>The Dixieland Tribe</h3>
-        <p style="margin-top:5px;"><a href="https://dixiefirst.com" target="_blank" style="font-size:0.9em; text-decoration:underline;">Visit the Dixieland Website</a></p>
+        <p style="margin-top: 5px; text-align: center;">
+    <a href="https://dixiefirst.com" target="_blank" rel="noopener noreferrer">Visit the Dixieland Tribe Website</a>
+</p>
+
     </div>
     <p>Dixieland preserves the culture of the old South, marked by aristocratic traditions, agriculture, and the memory of Cavalier forebears.</p>
     <ul>

@@ -11,22 +11,6 @@
 
 <body>
 
-  <!-- Borders Overlay -->
-  <div id="borders-container">
-    <img src="assets/borders/new-england-border.png" id="newengland-border" class="border-overlay">
-    <img src="assets/borders/new-york-border.png" id="newyork-border" class="border-overlay">
-    <img src="assets/borders/great-lakes-border.png" id="greatlakes-border" class="border-overlay">
-    <img src="assets/borders/dixieland-border.png" id="dixieland-border" class="border-overlay">
-    <img src="assets/borders/florida-border.png" id="florida-border" class="border-overlay">
-    <img src="assets/borders/texas-border.png" id="texas-border" class="border-overlay">
-    <img src="assets/borders/great-plains-border.png" id="greatplains-border" class="border-overlay">
-    <img src="assets/borders/deseret-border.png" id="deseret-border" class="border-overlay">
-    <img src="assets/borders/northwest-border.png" id="northwest-border" class="border-overlay">
-    <img src="assets/borders/california-border.png" id="california-border" class="border-overlay">
-    <img src="assets/borders/alaska-border.png" id="alaska-border" class="border-overlay">
-  </div>
-
-  <!-- Header -->
   <header>
     <img src="assets/images/tribes_logo_v2.png" alt="Tribal Confederacy Logo" style="height:80px; margin-bottom:10px;">
     <p>A New Vision for America</p>
@@ -36,11 +20,25 @@
     </nav>
   </header>
 
-  <!-- Main Content -->
   <main>
     <section class="map-section">
       <div class="tribal-map-container">
+
+        <!-- Background Map -->
         <img src="assets/images/blank-map.png" alt="Tribal Map" class="tribal-map">
+
+        <!-- Border Overlays (MOVED INSIDE tribal-map-container) -->
+        <img src="assets/borders/new-england-border.png" id="newengland-border" class="border-overlay">
+        <img src="assets/borders/new-york-border.png" id="newyork-border" class="border-overlay">
+        <img src="assets/borders/great-lakes-border.png" id="greatlakes-border" class="border-overlay">
+        <img src="assets/borders/dixieland-border.png" id="dixieland-border" class="border-overlay">
+        <img src="assets/borders/florida-border.png" id="florida-border" class="border-overlay">
+        <img src="assets/borders/texas-border.png" id="texas-border" class="border-overlay">
+        <img src="assets/borders/great-plains-border.png" id="greatplains-border" class="border-overlay">
+        <img src="assets/borders/deseret-border.png" id="deseret-border" class="border-overlay">
+        <img src="assets/borders/northwest-border.png" id="northwest-border" class="border-overlay">
+        <img src="assets/borders/california-border.png" id="california-border" class="border-overlay">
+        <img src="assets/borders/alaska-border.png" id="alaska-border" class="border-overlay">
 
         <!-- Shields -->
         <img src="assets/shields/great-lakes.png" class="shield" style="top:23%; left:62%;" data-tribe="greatlakes">
@@ -55,6 +53,7 @@
         <img src="assets/shields/california.png" class="shield" style="top:48%; left:13%;" data-tribe="california">
         <img src="assets/shields/dixieland.png" class="shield" style="top:52%; left:70%;" data-tribe="dixieland">
         <img src="assets/shields/alaska.png" class="shield" style="top:75%; left:8%;" data-tribe="alaska">
+
       </div>
       <p style="text-align:center; margin-top:10px;">Click on any shield to learn about the tribe.</p>
     </section>

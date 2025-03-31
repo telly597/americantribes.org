@@ -79,9 +79,15 @@ footer {
   margin: 0 auto;
 }
 
+.tribal-map-container {
+  position: relative;
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
 .tribal-map {
   width: 100%;
-  height: auto;
   display: block;
 }
 
@@ -90,12 +96,13 @@ footer {
   top: 0;
   left: 0;
   width: 100%;
-  height: auto;
-  opacity: 0.3; /* faint by default */
+  height: 100%;   /* <- critical */
+  opacity: 0.3;
   pointer-events: none;
   transition: opacity 0.5s ease, filter 0.5s ease;
   object-fit: contain;
 }
+
 
 .border-overlay.active {
   opacity: 0.7;

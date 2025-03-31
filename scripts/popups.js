@@ -54,14 +54,32 @@ greatlakes: `
 
 
 dixieland: `
-    <div class="popup-header">
-        <img src='assets/shields/dixieland.png' class='popup-shield'>
-        <h3>The Dixieland Tribe</h3>
-        <p style="margin-top: 5px; text-align: center;">
-    <a href="https://dixiefirst.com" target="_blank" rel="noopener noreferrer">Visit the Dixieland Tribe Website</a>
-</p>
-
+<div class="popup-header">
+    <img src='assets/shields/dixieland.png' class='popup-shield'>
+    <h3>The Dixieland Tribe</h3>
+    <div style="margin-top: 5px; text-align: center;">
+        <a href="https://dixiefirst.com" target="_blank" rel="noopener noreferrer" style="
+            display: inline-block;
+            background: radial-gradient(circle at 30% 30%, #a52a2a, #7b1e1e);
+            color: #fdf6e3;
+            padding: 8px 18px;
+            border: 2px solid #5c1313;
+            border-radius: 8px;
+            text-decoration: none;
+            font-family: Georgia, serif;
+            font-weight: bold;
+            box-shadow: 0 0 5px rgba(0,0,0,0.5);
+            transition: all 0.3s ease;
+            text-shadow: 1px 1px 0 #5c1313;
+        "
+        onmouseover="this.style.boxShadow='0 0 8px rgba(255, 215, 0, 0.85)';"
+        onmouseout="this.style.boxShadow='0 0 5px rgba(0,0,0,0.5)';"
+        >
+            Visit the Dixieland Tribe Website
+        </a>
     </div>
+</div>
+
     <p>Dixieland preserves the culture of the old South, marked by aristocratic traditions, agriculture, and the memory of Cavalier forebears.</p>
     <ul>
         <li><strong>Territory:</strong> Virginia, West Virginia, North Carolina, South Carolina, Georgia, Alabama, Mississippi, Louisiana, Arkansas, Tennessee, Kentucky, Southern Missouri (including St. Louis and Kansas City), Northern Florida</li>

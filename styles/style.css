@@ -51,13 +51,6 @@ h2 {
   margin-bottom: 20px;
 }
 
-img {
-  display: block;
-  margin: 20px auto;
-  max-width: 100%;
-  height: auto;
-}
-
 ul {
   list-style-type: none;
   padding: 0;
@@ -77,18 +70,51 @@ footer {
   border-top: 2px solid #444;
 }
 
-/* Map Section */
-.tribal-map-container {
+/* ========== MAP & BORDERS ========== */
+
+#borders-container {
   position: relative;
-  display: inline-block;
+  width: 100%;
+  max-width: 1800px;  /* <- match your exported GIMP map size */
+  margin: 0 auto;
 }
 
 .tribal-map {
   width: 100%;
+  height: auto;
   display: block;
 }
 
-/* Shields */
+.border-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0.3; /* faint by default */
+  pointer-events: none;
+  transition: opacity 0.5s ease, filter 0.5s ease;
+  object-fit: contain;
+}
+
+.border-overlay.active {
+  opacity: 0.7;
+  filter: drop-shadow(0 0 8px gold);
+}
+
+/* Optional Pulse Glow */
+@keyframes pulse-glow {
+  0% { filter: drop-shadow(0 0 4px gold); }
+  50% { filter: drop-shadow(0 0 12px gold); }
+  100% { filter: drop-shadow(0 0 4px gold); }
+}
+
+.border-overlay.pulse {
+  animation: pulse-glow 2s infinite;
+}
+
+/* ========== SHIELDS ========== */
+
 .shield {
   position: absolute;
   transform: translate(-50%, -60%) scale(1);
@@ -117,7 +143,8 @@ footer {
   filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.85));
 }
 
-/* Popup Overlay */
+/* ========== POPUPS ========== */
+
 .popup {
   position: fixed;
   top: 0;
@@ -141,7 +168,6 @@ footer {
   pointer-events: all;
 }
 
-/* Popup Content */
 .popup-content {
   background: #fdf6e3 url("../images/parchment-texture.png");
   background-size: cover;
@@ -178,14 +204,12 @@ footer {
   text-align: center;
 }
 
-/* Tribe Name */
 .popup-header h3 {
   margin: 0;
   padding: 0;
   font-size: 1.8em;
 }
 
-/* Optional Divider */
 .popup-header::after {
   content: "";
   display: block;
@@ -195,10 +219,10 @@ footer {
   opacity: 0.7;
 }
 
-/* Shield */
+/* Popup Shield */
 .popup-shield {
   position: absolute;
-  top: -40px;  /* Raised */
+  top: -40px;
   left: -20px;
   width: 70px;
   height: auto;
@@ -259,42 +283,4 @@ footer {
   .popup-header h3 {
     font-size: 1.5em;
   }
-}
-
-#borders-container {
-  position: relative;
-  width: 100%;
-  max-width: 1000px; /* adjust based on your map */
-  margin: 0 auto;
-}
-
-.border-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  opacity: 0.3; /* faint by default */
-  transition: opacity 0.5s, filter 0.5s;
-  pointer-events: none; /* allows clicks to go through */
-}
-
-.border-overlay.active {
-  opacity: 0.7;
-  filter: drop-shadow(0 0 8px gold);
-}
-
-/* Pulse Glow Animation */
-@keyframes pulse-glow {
-  0% { filter: drop-shadow(0 0 4px gold); }
-  50% { filter: drop-shadow(0 0 12px gold); }
-  100% { filter: drop-shadow(0 0 4px gold); }
-}
-
-.border-overlay.active {
-  opacity: 0.7;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.border-overlay.pulse {
-  animation: pulse-glow 2s infinite;
 }

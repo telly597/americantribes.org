@@ -260,3 +260,41 @@ footer {
     font-size: 1.5em;
   }
 }
+
+#borders-container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px; /* adjust based on your map */
+  margin: 0 auto;
+}
+
+.border-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0.3; /* faint by default */
+  transition: opacity 0.5s, filter 0.5s;
+  pointer-events: none; /* allows clicks to go through */
+}
+
+.border-overlay.active {
+  opacity: 0.7;
+  filter: drop-shadow(0 0 8px gold);
+}
+
+/* Pulse Glow Animation */
+@keyframes pulse-glow {
+  0% { filter: drop-shadow(0 0 4px gold); }
+  50% { filter: drop-shadow(0 0 12px gold); }
+  100% { filter: drop-shadow(0 0 4px gold); }
+}
+
+.border-overlay.active {
+  opacity: 0.7;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.border-overlay.pulse {
+  animation: pulse-glow 2s infinite;
+}

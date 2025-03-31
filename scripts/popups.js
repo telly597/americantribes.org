@@ -200,20 +200,47 @@ florida: `
   `
 };
 
+// ----------------------------------
+// Improved Popup + Border Glow Logic
+// ----------------------------------
+
 document.querySelectorAll('.shield').forEach(el => {
   el.addEventListener('click', () => {
       const tribe = el.dataset.tribe;
       document.getElementById('popup-text').innerHTML = popups[tribe] || "Unknown Tribe";
       document.getElementById('tribe-popup').classList.add('active');
+      highlightBorder(tribe);
   });
 });
 
+// Close Popup via button
 document.querySelector('.popup-close').addEventListener('click', () => {
   document.getElementById('tribe-popup').classList.remove('active');
+  clearBorders();
 });
 
+// Close Popup via ESC
 document.addEventListener('keydown', (e) => {
   if (e.key === "Escape") {
       document.getElementById('tribe-popup').classList.remove('active');
+      clearBorders();
   }
 });
+
+// Border Glow Handler
+function highlightBorder(tribe) {
+  document.querySelectorAll('.border-overlay').forEach(el => {
+      el.classList.remove('active', 'pulse');
+  });
+  const border = document.getElementById(`${tribe}-border`);
+  if (border) {
+      border.classList.add('active', 'pulse');
+  }
+}
+
+// Border Reset Handler
+function clearBorders() {
+  document.querySelectorAll('.border-overlay').forEach(el => {
+      el.classList.remove('active', 'pulse');
+  });
+}
